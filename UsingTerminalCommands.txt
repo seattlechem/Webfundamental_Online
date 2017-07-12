@@ -1,0 +1,16 @@
+﻿2. cd desktop
+3. md test
+4. copy nul index.html
+4. copy nul styles.css
+4. copy null commands.txt
+5. copy index.html index_2.html
+6. del styles.css
+7. cd..
+7. md destination
+8. cd test
+8. copy .\index_2.html ..\destination\index_2.html
+9. dir
+9. cd destination
+9. dir
+10. rd /s destination
+

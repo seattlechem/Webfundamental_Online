@@ -5,7 +5,7 @@ var time;
 
 if(minute >= 30){
 	if(period == "AM"){
-		hour = hour + 1;
+		hour += 1;
 		time = "It's almost " + hour + " in the morning.";
 		alert(time);
 	}

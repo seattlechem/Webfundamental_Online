@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Script Tag Only</title>
+	<script>
+		var numOfQuarters = Number(prompt("Please enter the number of quarters you have."));
+
+		function playSlots(numOfQuarters){
+			console.log("Your initial balance is " + numOfQuarters + " quarters.");
+			
+			while(numOfQuarters>0){
+				var win = Math.random();
+				if(win == 0.01){
+					numOfQuarters += (Math.floor(Math.random()*50) + 50);
+					console.log("You won. Your new balance is " + numOfQuarters + " quarter(s).");	
+				}
+				else{
+					numOfQuarters -= 1;
+					console.log("Lost. You have " + numOfQuarters + " quarter(s) left.");
+				}
+			}
+			if(numOfQuarters == 0){
+				console.log("0");
+			}
+		}
+
+		playSlots(numOfQuarters);
+		
+	// playSlots(30);
+
+	</script>
+	"use strict";
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numbers Only</title>
+	<script>
+		var arr = [1, "apple", -3, "orange", 0.5];
+		function numbersOnly(array)
+		{
+			var numbersOnlyArray = [];
+			for(var i=0; i<array.length; i++)
+			{
+				if(typeof array[i] === 'number')
+				{
+					numbersOnlyArray.push(arr[i]);
+				}
+				else
+				{
+				console.log("array ["+i+"] is not number");
+				}
+
+			}	
+		console.log(numbersOnlyArray);
+		}
+		
+		numbersOnly(arr);
+
+	</script>
+	"use strict";
+</head>
+<body>
+
+</body>
+</html>

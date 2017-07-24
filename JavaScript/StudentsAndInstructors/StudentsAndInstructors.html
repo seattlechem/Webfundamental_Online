@@ -34,19 +34,18 @@
 		}	
 
 		
-			if (users == 'Students'){
-				console.log("Students");
-				for(i=0; i<users.Students.length; i++){
-					console.log(i+1 + " - " + users.Students[i].first_name + " " + users.Students[i].last_name + " - " + (users.Students[i].first_name + users.Students[i].last_name).length);
-				}
-			}
 
-			else {
-				console.log("Instructors");
+				
+				for(i=0; i<users.Students.length; i++){
+					console.log(i+1 + " - " + users.Students[i].first_name + " " + users.Students[i].last_name + " - " + (users.Students[i].first_name+users.Students[i].last_name).length);
+				}
+			
+
+		
 				for(i=0; i<users.Instructors.length; i++){
 					console.log(i+1 + " - " + users.Instructors.first_name + " " + users.Instructors[i].last_name + " - " + (users.Instructors[i].first_name+users.Instructors[i].last_name).length);
 				}
-			}
+			
 
 /*
 			Students

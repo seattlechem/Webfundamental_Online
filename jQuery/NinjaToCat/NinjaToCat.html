@@ -14,7 +14,7 @@
 			margin-top: 5px;
 		}
 	</style>
-	<script type="text/javascript" src="d:/codingdojo/jquery/jquery-3.2.1min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <div id="Container">
@@ -26,7 +26,32 @@
 </div>
 <script type="text/javascript">
 	$("img").click(function(){
-		if($(this).attr('alt') == '')
+		var x = $(this).attr('alt');
+		var y = x.match(/(\d+)/g);
+		var i = y[0];
+		
+		if(i == 0){
+			$(this).attr("src", "./img/ninja0.png");
+			
+		}
+		else if(i == 1){
+			$(this).attr("src", "./img/ninja1.png");
+			
+		}
+		else if(i == 2){
+			$(this).attr("src", "./img/ninja2.png");
+			
+		}
+		else if(i == 3){
+			$(this).attr("src", "./img/ninja3.png");
+			
+		}
+		else{
+			$(this).attr("src", "./img/ninja4.png");
+			
+		};
+			
+			
 	});
 </script>
 </body>

@@ -10,7 +10,7 @@
 			
 			while(numOfQuarters>0){
 				var win = Math.random();
-				if(win == 0.01){
+				if(win <= 0.01){
 					numOfQuarters += (Math.floor(Math.random()*50) + 50);
 					console.log("You won. Your new balance is " + numOfQuarters + " quarter(s).");	
 				}

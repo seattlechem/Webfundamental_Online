@@ -1,0 +1,27 @@
+table{
+	border: 1px solid black;
+	width: 80%;
+}
+th{
+	width: 20%;
+	text-align: left;
+}
+
+p{
+	display: inline-block;
+	text-align: right;
+}
+
+input{
+
+	display: inline;
+
+}
+
+.inputRow{
+	display: block;
+}
+
+#inputTable{
+	width: 20%;
+}

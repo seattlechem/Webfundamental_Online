@@ -5,17 +5,28 @@
 
 	<script type="text/javascript" src ="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <script type="text/javascript">
+		$(document).ready(function(){
+			$('listTable').find('tbody: last').append("<tr><td>test</td></tr><tr><td>test2</td></tr><tr><td>test3</td></tr><tr><td>test4</td></tr>");
+		});
+	</script>
+ -->
+
 	
 </head>
 <body>
 <!-- Add table head -->
-	<table>
-		<tr>
-			<th>First Name</th>
-			<th>Last Name</th>
-			<th>Email Address</th>
-			<th>Contact #</th>
-		</tr>
+	<table id="listTable">
+		<thead>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email Address</th>
+				<th>Contact #</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>	
 
 	</table>
 
@@ -23,17 +34,19 @@
 
 	<table id="inputTable">
 		<tr>	
-			<td class="inputRow"><p>First Name: </p><input type="text" name="firstName"></td>
+			<td class="inputRow"><p>First Name: </p><input id="firstName" type="text"></td>
 		<tr>	
-			<td class="inputRow"><p>Last Name: </p><input type="text" name="lastName"></td>
+			<td class="inputRow"><p>Last Name: </p><input id="lastName" type="text"></td>
 		</tr>
 		<tr>	
-			<td class="inputRow"><p>Email Address: </p><input type="text" name="email"></td>
+			<td class="inputRow"><p>Email Address: </p><input id="emailAddress" type="text"></td>
 		</tr>
 		<tr>
-			<td class="inputRow"><p>Contact No.: </p><input type="text" name="contactNo"></td>
+			<td class="inputRow"><p>Contact No.: </p><input id="contactNo" type="text"></td>
 		</tr>
-	</table>	
+	</table>
+
+	<button>Add User</button>	
 </div>
 
 <script type="text/javascript" src="users.js"></script>
